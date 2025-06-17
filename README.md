@@ -46,3 +46,6 @@ Includes a set of unit tests covering key logic and hooks. Not all features are 
 - `yarn build` build prod environemnt
 - `yarn start` run prod environment
 - `yarn test` run unit tests
+
+To run as dev use `yarn dev`
+To run as prod run `yarn build` and then `yarn start`

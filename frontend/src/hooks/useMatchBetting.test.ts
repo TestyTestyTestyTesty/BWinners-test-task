@@ -22,6 +22,7 @@ const mockParams = {
   homeTeam: 'Team A',
   awayTeam: 'Team B',
   odds: mockOdds,
+  commenceTime: '2025-12-31T12:00:00Z',
 };
 
 describe('useMatchBetting', () => {
