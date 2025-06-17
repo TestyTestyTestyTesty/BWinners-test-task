@@ -1,6 +1,7 @@
 # BWinners Test Task Tomasz Sikora
 
 The Multibet app includes features such as filtering, backend-hosted data, a cart system, and submission functionality. Many more features and tests could be implemented but due to time constraints, some functionalities are not there and other may contain bugs. This is expected given the limited timeframe in which the app was developed.
+Only matches that not yet played can be bet. THere is one soccer match that is happening 10.06.2025 as a test that it is disabled for past matches
 
 # 🛠️ Tech Stack
 
