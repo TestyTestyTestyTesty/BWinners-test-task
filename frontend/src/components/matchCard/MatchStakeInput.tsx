@@ -38,12 +38,11 @@ export const MatchStakeInput: FC<StakeInputProps> = ({
   );
 
   const inputClassName = [
-  'border rounded px-3 py-2 text-sm outline-none transition text-black',
-  'focus:ring-2 focus:ring-red-500',
-  error ? 'border-red-500' : 'border-gray-300',
-  disabled ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : '',
-].join(' ');
-
+    'border rounded px-3 py-2 text-sm outline-none transition text-black',
+    'focus:ring-2 focus:ring-red-500',
+    error ? 'border-red-500' : 'border-gray-300',
+    disabled ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : '',
+  ].join(' ');
 
   return (
     <div className="flex flex-col gap-1 w-full">

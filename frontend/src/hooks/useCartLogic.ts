@@ -16,19 +16,18 @@ export const useCartLogic = () => {
     [selections]
   );
 
-
   const totalOdds = useMemo(() => {
-  const getOdd = (item:BetSelection) => {
-    if (item.betType === 'home') return item.odds.home;
-    if (item.betType === 'away') return item.odds.away;
-    return item.odds.draw ?? 1;
-  };
+    const getOdd = (item: BetSelection) => {
+      if (item.betType === 'home') return item.odds.home;
+      if (item.betType === 'away') return item.odds.away;
+      return item.odds.draw ?? 1;
+    };
 
-  return selections.reduce((acc, item) => {
-    const odd = getOdd(item);
-    return acc * odd;
-  }, 1);
-}, [selections]);
+    return selections.reduce((acc, item) => {
+      const odd = getOdd(item);
+      return acc * odd;
+    }, 1);
+  }, [selections]);
 
   const handleSubmit = async () => {
     resetStatus();

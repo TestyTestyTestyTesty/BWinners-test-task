@@ -22,7 +22,6 @@ Only matches that not yet played can be bet. THere is one soccer match that is h
 
 Includes a set of unit tests covering key logic and hooks. Not all features are tested due to time constraints.
 
-
 ## 🧩 Project Structure
 
 - `frontend/` – Main application with UI, hooks, and components
@@ -48,4 +47,5 @@ Includes a set of unit tests covering key logic and hooks. Not all features are 
 - `yarn test` run unit tests
 
 To run as dev use `yarn dev`
+
 To run as prod run `yarn build` and then `yarn start`

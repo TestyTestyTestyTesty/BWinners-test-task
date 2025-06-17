@@ -9,7 +9,12 @@ export interface MatchOddsButtonsProps {
   disabled?: boolean;
 }
 
-export const MatchOddsButtons: FC<MatchOddsButtonsProps> = ({ options, selected, onSelect,disabled = false }) => {
+export const MatchOddsButtons: FC<MatchOddsButtonsProps> = ({
+  options,
+  selected,
+  onSelect,
+  disabled = false,
+}) => {
   const colClass =
     options.length === 2 ? 'grid-cols-2' : options.length === 3 ? 'grid-cols-3' : 'grid-cols-1';
 

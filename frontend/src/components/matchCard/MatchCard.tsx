@@ -33,7 +33,7 @@ export const MatchCard: FC<MatchCardProps> = ({
     handleStakeChange,
     handleAddBet,
     removeSelection,
-  } = useMatchBetting({ matchId, sport, homeTeam, awayTeam, odds,commenceTime: date });
+  } = useMatchBetting({ matchId, sport, homeTeam, awayTeam, odds, commenceTime: date });
 
   return (
     <div className="bg-white shadow-sm rounded-lg p-4 text-sm space-y-2 w-full lg:max-w-md border border-gray-200">

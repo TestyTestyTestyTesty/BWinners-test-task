@@ -29,12 +29,7 @@ export const MatchOddsButton: FC<MatchOddsButtonProps> = ({
 
   const disabledClasses = disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer';
 
-  const buttonClasses = [
-    baseClasses,
-    selectedClasses,
-    hoverClasses,
-    disabledClasses,
-  ].join(' ');
+  const buttonClasses = [baseClasses, selectedClasses, hoverClasses, disabledClasses].join(' ');
 
   return (
     <button
