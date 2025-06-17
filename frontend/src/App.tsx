@@ -69,7 +69,7 @@ const App = () => {
       <div className="py-4 gap-4 flex flex-col items-center w-full">
         <div className="flex flex-col items-center gap-2 text-black bg-white shadow-sm rounded-lg p-4 text-sm space-y-2 w-full lg:max-w-md border border-gray-200">
           <h2 className="font-bold">Tomasz Sikora BWinners test task</h2>
-          <p>Please readme to understand full context</p>
+          <p>Please read Readme.md to understand full context</p>
         </div>
 
         <DateFilter />
