@@ -1,5 +1,7 @@
 # BWinners Test Task Tomasz Sikora
 
+Multibet app with filtering, backend hosted data, cart and submit funcionality
+
 # 🛠️ Tech Stack
 
 - React + TypeScript
