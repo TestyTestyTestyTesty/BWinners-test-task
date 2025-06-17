@@ -48,6 +48,6 @@ describe('useLoadGames', () => {
     expect(result.current.games).toEqual([]);
     expect(result.current.error).toBe(messages.errors.failed_to_load_games);
 
-    errorSpy.mockRestore(); // Restore original after test
+    errorSpy.mockRestore();
   });
 });

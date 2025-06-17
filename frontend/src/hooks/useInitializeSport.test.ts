@@ -1,4 +1,3 @@
-// useInitializeSport.test.ts
 import { renderHook } from '@testing-library/react';
 import { useInitializeSport } from './useInitializeSport';
 import { afterEach, describe, expect, it, vi } from 'vitest';

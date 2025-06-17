@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react';
 import { useFilteredGames } from './useFilteredGames';
-import * as FilterStore from '@store/useFilterStore'; // mock the store
+import * as FilterStore from '@store/useFilterStore';
 import { describe, expect, it, vi } from 'vitest';
 import type { Mock } from 'vitest';
 import type { Game } from '@typeDefs/game';

@@ -44,7 +44,7 @@ describe('useMatchBetting', () => {
     expect(result.current.tempStake).toBe(10);
     expect(result.current.isInSlip).toBe(false);
     expect(result.current.locked).toBe(false);
-    expect(result.current.bettingOptions).toHaveLength(3); // because Soccer is drawable
+    expect(result.current.bettingOptions).toHaveLength(3);
   });
 
   it('should update bet type', () => {
@@ -72,7 +72,7 @@ describe('useMatchBetting', () => {
 
     act(() => {
       result.current.handleSelectBet('home');
-      result.current.handleStakeChange(0); // Invalid
+      result.current.handleStakeChange(0);
       result.current.handleAddBet();
     });
 

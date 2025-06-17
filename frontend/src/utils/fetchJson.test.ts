@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { fetchJson } from '@utils/fetchJson'; // adjust path as needed
+import { fetchJson } from '@utils/fetchJson';
 
 describe('fetchJson', () => {
   const mockFetch = vi.fn();
