@@ -1,0 +1,58 @@
+{
+  "name": "bwinners-test-task",
+  "description": "Project implementing a test task for BWinners recruitment process. App implements multi-bet functionality",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "frontend": "vite --config frontend/vite.config.ts",
+    "build": "tsc -b && vite build --config frontend/vite.config.ts",
+    "backend": "json-server backend/db.json --port 3001",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "lint-frontend": "eslint frontend --config frontend/eslint.config.js",
+    "test": "vitest --config frontend/vitest.config.ts",
+    "preview": "vite preview --config frontend/vite.config.ts",
+    "start": "concurrently \"yarn backend\" \"yarn preview\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.10",
+    "date-fns": "^4.1.0",
+    "react": "^19.1.0",
+    "react-datepicker": "^8.4.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.10",
+    "zustand": "^5.0.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.0.1",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.25.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "jsdom": "^26.1.0",
+    "json-server": "^1.0.0-beta.3",
+    "prettier": "^3.5.3",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.3"
+  },
+  "packageManager": "yarn@4.0.2",
+  "engines": {
+    "node": ">=20"
+  }
+}

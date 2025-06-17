@@ -1,0 +1,467 @@
+{
+  "games": [
+    {
+      "id": "1",
+      "sport": "Soccer",
+      "commence_time": "2025-06-20T18:00:00Z",
+      "home_team": "Barcelona",
+      "away_team": "Real Madrid",
+      "odds": {
+        "home_win": 1.95,
+        "draw": 3.4,
+        "away_win": 3.8
+      }
+    },
+    {
+      "id": "2",
+      "sport": "Soccer",
+      "commence_time": "2025-06-21T17:00:00Z",
+      "home_team": "Manchester United",
+      "away_team": "Liverpool",
+      "odds": {
+        "home_win": 2.1,
+        "draw": 3.3,
+        "away_win": 3
+      }
+    },
+    {
+      "id": "3",
+      "sport": "Soccer",
+      "commence_time": "2025-06-22T20:00:00Z",
+      "home_team": "Juventus",
+      "away_team": "AC Milan",
+      "odds": {
+        "home_win": 2.5,
+        "draw": 3.1,
+        "away_win": 2.8
+      }
+    },
+    {
+      "id": "4",
+      "sport": "Basketball",
+      "commence_time": "2025-06-23T01:00:00Z",
+      "home_team": "LA Lakers",
+      "away_team": "Miami Heat",
+      "odds": {
+        "home_win": 1.8,
+        "draw": null,
+        "away_win": 2.2
+      }
+    },
+    {
+      "id": "5",
+      "sport": "Basketball",
+      "commence_time": "2025-06-24T03:30:00Z",
+      "home_team": "Golden State Warriors",
+      "away_team": "Boston Celtics",
+      "odds": {
+        "home_win": 1.95,
+        "draw": null,
+        "away_win": 1.9
+      }
+    },
+    {
+      "id": "6",
+      "sport": "Basketball",
+      "commence_time": "2025-06-25T02:00:00Z",
+      "home_team": "Chicago Bulls",
+      "away_team": "Brooklyn Nets",
+      "odds": {
+        "home_win": 2.3,
+        "draw": null,
+        "away_win": 1.7
+      }
+    },
+    {
+      "id": "7",
+      "sport": "Tennis",
+      "commence_time": "2025-06-26T14:00:00Z",
+      "home_team": "Novak Djokovic",
+      "away_team": "Carlos Alcaraz",
+      "odds": {
+        "home_win": 2.1,
+        "draw": null,
+        "away_win": 1.7
+      }
+    },
+    {
+      "id": "8",
+      "sport": "Tennis",
+      "commence_time": "2025-06-27T12:00:00Z",
+      "home_team": "Rafael Nadal",
+      "away_team": "Daniil Medvedev",
+      "odds": {
+        "home_win": 2.4,
+        "draw": null,
+        "away_win": 1.6
+      }
+    },
+    {
+      "id": "9",
+      "sport": "Tennis",
+      "commence_time": "2025-06-28T15:00:00Z",
+      "home_team": "Iga Swiatek",
+      "away_team": "Aryna Sabalenka",
+      "odds": {
+        "home_win": 1.9,
+        "draw": null,
+        "away_win": 2
+      }
+    }
+  ],
+  "bets": [
+    {
+      "id": "e274",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "home",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "ef68",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "e752",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "draw",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "1518",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "5fb1",
+      "bets": [
+        {
+          "matchId": "7",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 2.1,
+            "draw": null,
+            "away": 1.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "065d",
+      "bets": [
+        {
+          "matchId": "7",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 2.1,
+            "draw": null,
+            "away": 1.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "5274",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "046b",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "2998",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "draw",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          },
+          "awayTeam": "Real Madrid",
+          "homeTeam": "Barcelona"
+        }
+      ]
+    },
+    {
+      "id": "7ca5",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          },
+          "awayTeam": "Real Madrid",
+          "homeTeam": "Barcelona"
+        }
+      ]
+    },
+    {
+      "id": "e193",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          },
+          "awayTeam": "Real Madrid",
+          "homeTeam": "Barcelona"
+        }
+      ]
+    },
+    {
+      "id": "2839",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          },
+          "awayTeam": "Real Madrid",
+          "homeTeam": "Barcelona"
+        }
+      ]
+    },
+    {
+      "id": "86f9",
+      "bets": [
+        {
+          "matchId": "7",
+          "betType": "home",
+          "stake": 10,
+          "odds": {
+            "home": 2.1,
+            "draw": null,
+            "away": 1.7
+          },
+          "awayTeam": "Carlos Alcaraz",
+          "homeTeam": "Novak Djokovic"
+        }
+      ]
+    },
+    {
+      "id": "e37e",
+      "bets": [
+        {
+          "matchId": "7",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 2.1,
+            "draw": null,
+            "away": 1.7
+          },
+          "awayTeam": "Carlos Alcaraz",
+          "homeTeam": "Novak Djokovic"
+        }
+      ]
+    },
+    {
+      "id": "5990",
+      "bets": [
+        {
+          "matchId": "7",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 2.1,
+            "draw": null,
+            "away": 1.7
+          },
+          "awayTeam": "Carlos Alcaraz",
+          "homeTeam": "Novak Djokovic"
+        }
+      ]
+    },
+    {
+      "id": "f956",
+      "bets": [
+        {
+          "matchId": "7",
+          "betType": "away",
+          "stake": 20,
+          "odds": {
+            "home": 2.1,
+            "draw": null,
+            "away": 1.7
+          },
+          "awayTeam": "Carlos Alcaraz",
+          "homeTeam": "Novak Djokovic"
+        }
+      ]
+    },
+    {
+      "id": "f90e",
+      "bets": [
+        {
+          "matchId": "7",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 2.1,
+            "draw": null,
+            "away": 1.7
+          },
+          "awayTeam": "Carlos Alcaraz",
+          "homeTeam": "Novak Djokovic"
+        }
+      ]
+    },
+    {
+      "id": "f172",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          },
+          "awayTeam": "Real Madrid",
+          "homeTeam": "Barcelona"
+        }
+      ]
+    },
+    {
+      "id": "f811",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          },
+          "awayTeam": "Real Madrid",
+          "homeTeam": "Barcelona"
+        }
+      ]
+    },
+    {
+      "id": "398c",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          },
+          "awayTeam": "Real Madrid",
+          "homeTeam": "Barcelona"
+        },
+        {
+          "matchId": "2",
+          "betType": "draw",
+          "stake": 10,
+          "odds": {
+            "home": 2.1,
+            "draw": 3.3,
+            "away": 3
+          },
+          "awayTeam": "Liverpool",
+          "homeTeam": "Manchester United"
+        }
+      ]
+    },
+    {
+      "id": "8bce",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          },
+          "awayTeam": "Real Madrid",
+          "homeTeam": "Barcelona"
+        }
+      ]
+    }
+  ]
+}
