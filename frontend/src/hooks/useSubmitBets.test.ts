@@ -1,6 +1,6 @@
+import type { BetSelection } from '@typeDefs/bet';
 import { placeBets } from '@api/bets';
 import { useSubmitBets } from '@hooks/useSubmitBets';
-import type { BetSelection } from '@store/useBetSlipStore';
 import { act, renderHook } from '@testing-library/react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 

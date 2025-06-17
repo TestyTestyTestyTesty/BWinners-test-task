@@ -1,7 +1,6 @@
 import { config } from '@config/api';
 import { fetchJson } from '@utils/fetchJson';
-import type { BetSelection } from '@store/useBetSlipStore';
-import type { PlacedBetsResponse } from '@typeDefs/bet';
+import type { BetSelection, PlacedBetsResponse } from '@typeDefs/bet';
 
 export const placeBets = async (bets: BetSelection[]): Promise<PlacedBetsResponse> => {
   return fetchJson(`${config.API_BASE_URL}/bets`, {

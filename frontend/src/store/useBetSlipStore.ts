@@ -1,15 +1,5 @@
+import type { BetSelection, BetType } from '@typeDefs/bet';
 import { create } from 'zustand';
-import type { Odds } from '@typeDefs/game';
-import type { BetType } from '@typeDefs/bet';
-
-export interface BetSelection {
-  matchId: number;
-  homeTeam: string;
-  awayTeam: string;
-  betType: BetType;
-  stake: number;
-  odds: Odds;
-}
 
 type BetSlipState = {
   selections: BetSelection[];

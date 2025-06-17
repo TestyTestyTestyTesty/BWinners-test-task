@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { useBetSlipStore } from '@store/useBetSlipStore';
 import { useSubmitBets } from '@hooks/useSubmitBets';
 import { messages } from '@messages/messages';
+import type { BetSelection } from '@typeDefs/bet';
 
 export const useCartLogic = () => {
   const { selections, removeSelection, resetSelections } = useBetSlipStore();
@@ -15,19 +16,19 @@ export const useCartLogic = () => {
     [selections]
   );
 
-  const totalOdds = useMemo(
-    () =>
-      selections.reduce((acc, item) => {
-        const odd =
-          item.betType === 'home'
-            ? item.odds.home
-            : item.betType === 'away'
-              ? item.odds.away
-              : (item.odds.draw ?? 1);
-        return acc * odd;
-      }, 1),
-    [selections]
-  );
+
+  const totalOdds = useMemo(() => {
+  const getOdd = (item:BetSelection) => {
+    if (item.betType === 'home') return item.odds.home;
+    if (item.betType === 'away') return item.odds.away;
+    return item.odds.draw ?? 1;
+  };
+
+  return selections.reduce((acc, item) => {
+    const odd = getOdd(item);
+    return acc * odd;
+  }, 1);
+}, [selections]);
 
   const handleSubmit = async () => {
     resetStatus();

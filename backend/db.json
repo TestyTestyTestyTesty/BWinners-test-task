@@ -602,6 +602,52 @@
           "homeTeam": "Juventus"
         }
       ]
+    },
+    {
+      "id": "7288",
+      "bets": [
+        {
+          "matchId": "1",
+          "betType": "draw",
+          "stake": 10,
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 3.8
+          },
+          "awayTeam": "Real Madrid",
+          "homeTeam": "Barcelona"
+        }
+      ]
+    },
+    {
+      "id": "1e3b",
+      "bets": [
+        {
+          "matchId": "7",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 2.1,
+            "draw": null,
+            "away": 1.7
+          },
+          "awayTeam": "Carlos Alcaraz",
+          "homeTeam": "Novak Djokovic"
+        },
+        {
+          "matchId": "4",
+          "betType": "away",
+          "stake": 10,
+          "odds": {
+            "home": 1.8,
+            "draw": null,
+            "away": 2.2
+          },
+          "awayTeam": "Miami Heat",
+          "homeTeam": "LA Lakers"
+        }
+      ]
     }
   ]
 }

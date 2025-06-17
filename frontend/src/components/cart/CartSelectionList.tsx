@@ -1,7 +1,7 @@
 import { DEFAULT_CURRENCY } from '@constants/currency';
 import { getCurrencySymbol } from '@utils/currency';
 import { messages } from '@messages/messages';
-import type { BetSelection } from '@store/useBetSlipStore';
+import type { BetSelection } from '@typeDefs/bet';
 
 interface CartSelectionsListProps {
   selections: BetSelection[];

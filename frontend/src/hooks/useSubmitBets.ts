@@ -1,7 +1,7 @@
 import { placeBets } from '@api/bets';
-import type { BetSelection } from '@store/useBetSlipStore';
 import { useRef, useState } from 'react';
 import { useBetSlipStore } from '@store/useBetSlipStore';
+import type { BetSelection } from '@typeDefs/bet';
 
 export const useSubmitBets = () => {
   const [submitting, setSubmitting] = useState(false);

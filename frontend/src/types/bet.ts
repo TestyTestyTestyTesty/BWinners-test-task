@@ -18,3 +18,12 @@ export interface PlacedBetsResponse {
   id: string;
   bets: PlacedBet[];
 }
+
+export interface BetSelection {
+  matchId: number;
+  homeTeam: string;
+  awayTeam: string;
+  betType: BetType;
+  stake: number;
+  odds: Odds;
+}
