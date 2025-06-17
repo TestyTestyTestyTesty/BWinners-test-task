@@ -6,9 +6,10 @@ export interface MatchOddsButtonsProps {
   options: BettingOption[];
   selected?: BetType;
   onSelect?: (betType: BetType) => void;
+  disabled?: boolean;
 }
 
-export const MatchOddsButtons: FC<MatchOddsButtonsProps> = ({ options, selected, onSelect }) => {
+export const MatchOddsButtons: FC<MatchOddsButtonsProps> = ({ options, selected, onSelect,disabled = false }) => {
   const colClass =
     options.length === 2 ? 'grid-cols-2' : options.length === 3 ? 'grid-cols-3' : 'grid-cols-1';
 
@@ -22,6 +23,7 @@ export const MatchOddsButtons: FC<MatchOddsButtonsProps> = ({ options, selected,
           betType={betType}
           isSelected={selected === betType}
           onClick={() => onSelect?.(betType)}
+          disabled={disabled}
         />
       ))}
     </div>

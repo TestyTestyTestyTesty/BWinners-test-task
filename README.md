@@ -1,6 +1,6 @@
 # BWinners Test Task Tomasz Sikora
 
-The Multibet app includes features such as filtering, backend-hosted data, a cart system, and submission functionality. While many more features and tests could be implemented, due to time constraints, some functionalities may contain bugs. This is expected given the limited timeframe in which the app was developed.
+The Multibet app includes features such as filtering, backend-hosted data, a cart system, and submission functionality. Many more features and tests could be implemented but due to time constraints, some functionalities are not there and other may contain bugs. This is expected given the limited timeframe in which the app was developed.
 
 # 🛠️ Tech Stack
 

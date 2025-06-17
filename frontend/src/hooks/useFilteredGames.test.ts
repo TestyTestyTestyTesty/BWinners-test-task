@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react';
 import { useFilteredGames } from './useFilteredGames';
 import * as FilterStore from '@store/useFilterStore';
-import { describe, expect, it, vi } from 'vitest';
+import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 import type { Mock } from 'vitest';
 import type { Game } from '@typeDefs/game';
 
@@ -29,33 +29,34 @@ const mockGames: Game[] = [
 ];
 
 describe('useFilteredGames', () => {
-  it('returns all games when no filters are set', () => {
-    mockUseFilterStore.mockReturnValue({
-      selectedSport: null,
-      selectedDate: null,
-    });
+  const originalDateNow = Date.now;
 
-    const { result } = renderHook(() => useFilteredGames(mockGames));
-
-    expect(result.current).toHaveLength(2);
+  beforeAll(() => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date('2025-06-17T00:00:00'));
   });
 
-  it('filters by selected sport', () => {
+  afterAll(() => {
+    vi.useRealTimers();
+    Date.now = originalDateNow;
+  });
+
+  it('returns only future games when no filters are set', () => {
     mockUseFilterStore.mockReturnValue({
-      selectedSport: 'Soccer',
+      selectedSport: null,
       selectedDate: null,
     });
 
     const { result } = renderHook(() => useFilteredGames(mockGames));
 
     expect(result.current).toHaveLength(1);
-    expect(result.current[0].sport).toBe('Soccer');
+    expect(result.current[0].id).toBe(2);
   });
 
-  it('filters by selected date', () => {
+  it('includes past games when a date is selected', () => {
     mockUseFilterStore.mockReturnValue({
       selectedSport: null,
-      selectedDate: new Date('2025-06-16T08:00:00'),
+      selectedDate: new Date('2025-06-16'),
     });
 
     const { result } = renderHook(() => useFilteredGames(mockGames));
@@ -64,10 +65,22 @@ describe('useFilteredGames', () => {
     expect(result.current[0].id).toBe(1);
   });
 
-  it('filters by sport and date', () => {
+  it('filters by selected sport (future only)', () => {
+    mockUseFilterStore.mockReturnValue({
+      selectedSport: 'Basketball',
+      selectedDate: null,
+    });
+
+    const { result } = renderHook(() => useFilteredGames(mockGames));
+
+    expect(result.current).toHaveLength(1);
+    expect(result.current[0].sport).toBe('Basketball');
+  });
+
+  it('filters by selected sport and includes past when date is selected', () => {
     mockUseFilterStore.mockReturnValue({
       selectedSport: 'Soccer',
-      selectedDate: new Date('2025-06-16T10:00:00'),
+      selectedDate: new Date('2025-06-16'),
     });
 
     const { result } = renderHook(() => useFilteredGames(mockGames));
@@ -79,7 +92,7 @@ describe('useFilteredGames', () => {
   it('returns empty array if filters do not match', () => {
     mockUseFilterStore.mockReturnValue({
       selectedSport: 'Tennis',
-      selectedDate: new Date('2025-06-16'),
+      selectedDate: null,
     });
 
     const { result } = renderHook(() => useFilteredGames(mockGames));

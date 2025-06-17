@@ -3,6 +3,7 @@ import { isDrawableSport } from '@constants/sports';
 import { useBetSlipStore } from '@store/useBetSlipStore';
 import type { BetType, BettingOption } from '@typeDefs/bet';
 import type { Odds } from '@typeDefs/game';
+import { isBefore } from 'date-fns';
 
 interface UseMatchBettingParams {
   matchId: number;
@@ -10,6 +11,7 @@ interface UseMatchBettingParams {
   homeTeam: string;
   awayTeam: string;
   odds: Odds;
+  commenceTime: string;
 }
 
 export const useMatchBetting = ({
@@ -18,6 +20,7 @@ export const useMatchBetting = ({
   homeTeam,
   awayTeam,
   odds,
+  commenceTime,
 }: UseMatchBettingParams) => {
   const { selections, addSelection, removeSelection, locked } = useBetSlipStore();
 
@@ -38,6 +41,8 @@ export const useMatchBetting = ({
     return base;
   }, [odds, sport]);
 
+  const matchFinished = isBefore(new Date(commenceTime), new Date());
+
   const handleSelectBet = (betType: BetType) => setTempBetType(betType);
   const handleStakeChange = (newStake: number) => setTempStake(newStake);
   const handleAddBet = () => {
@@ -57,5 +62,6 @@ export const useMatchBetting = ({
     handleStakeChange,
     handleAddBet,
     removeSelection,
+    matchFinished,
   };
 };

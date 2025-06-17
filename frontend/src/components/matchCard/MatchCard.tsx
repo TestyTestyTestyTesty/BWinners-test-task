@@ -26,13 +26,14 @@ export const MatchCard: FC<MatchCardProps> = ({
     tempBetType,
     tempStake,
     isInSlip,
+    matchFinished,
     locked,
     bettingOptions,
     handleSelectBet,
     handleStakeChange,
     handleAddBet,
     removeSelection,
-  } = useMatchBetting({ matchId, sport, homeTeam, awayTeam, odds });
+  } = useMatchBetting({ matchId, sport, homeTeam, awayTeam, odds,commenceTime: date });
 
   return (
     <div className="bg-white shadow-sm rounded-lg p-4 text-sm space-y-2 w-full lg:max-w-md border border-gray-200">
@@ -51,6 +52,7 @@ export const MatchCard: FC<MatchCardProps> = ({
         options={bettingOptions}
         selected={tempBetType ?? undefined}
         onSelect={handleSelectBet}
+        disabled={matchFinished}
       />
 
       <MatchStakeInput
@@ -61,6 +63,7 @@ export const MatchCard: FC<MatchCardProps> = ({
         error={
           tempStake < 1 || tempStake > 1000 ? messages.errors.stake_must_be_between_1_and_1000 : ''
         }
+        disabled={matchFinished}
       />
 
       <div className="flex items-center justify-between mt-4">
